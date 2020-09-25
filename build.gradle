@@ -181,6 +181,11 @@ dependencies {
     compileOnly fg.deobf("org.squiddev:cc-tweaked-${version_minecraft}:1.94.0")
     compile "malte0811:BlockModelSplitter:1.2.0"
     testImplementation('junit:junit:4.13')
+
+    compile fg.deobf(group: "com.blamejared.crafttweaker", name: "CraftTweaker-1.16.3", version: "7.0.0.45")
+    compile group: "com.blamejared.crafttweaker", name: "Crafttweaker_Annotation_Processors-1.16.3", version: "1.0.0.45"
+    annotationProcessor group: "com.blamejared.crafttweaker", name: "Crafttweaker_Annotation_Processors-1.16.3", version: "1.0.0.45"
+    annotationProcessor group: "org.reflections", name: 'reflections', version: '0.9.12'
 }
 
 def customGradle = rootProject.file('custom.gradle');
