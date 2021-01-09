@@ -45,6 +45,7 @@ public class CrafttweakerEventHandlers
 		addExampleFile(event, "blueprint");
 		addExampleFile(event, "bottling_machine");
 		addExampleFile(event, "cloche");
+		addExampleFile(event, "coke_oven");
 		addExampleFile(event, "crusher");
 		addExampleFile(event, "fermenter");
 		addExampleFile(event, "metal_press");

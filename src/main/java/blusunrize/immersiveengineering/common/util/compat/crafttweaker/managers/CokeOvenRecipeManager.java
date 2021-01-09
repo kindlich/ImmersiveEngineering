@@ -50,6 +50,11 @@ public class CokeOvenRecipeManager implements IRecipeManager
 	 * @param time             The time the recipe requires, in ticks
 	 * @param output           The produced item
 	 * @param creosoteProduced The amount of creosote produced
+	 * @docParam recipePath "burn_a_stick"
+	 * @docParam ingredient <item:minecraft:stick>
+	 * @docParam time 100
+	 * @docParam output <item:immersiveengineering:stick_treated>
+	 * @docParam creosoteProduced 1
 	 */
 	@ZenCodeType.Method
 	public void addRecipe(String recipePath, IIngredient ingredient, int time, IItemStack output, @ZenCodeType.OptionalInt int creosoteProduced)

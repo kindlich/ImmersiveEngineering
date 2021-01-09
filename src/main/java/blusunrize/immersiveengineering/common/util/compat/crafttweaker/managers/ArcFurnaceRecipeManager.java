@@ -89,7 +89,6 @@ public class ArcFurnaceRecipeManager implements IRecipeManager
 	/**
 	 * Removes a recipe based on its outputs.
 	 * Removes the recipe as long as one of the recipe's outputs matches the ingredient given.
-	 * TODO: Allow for removal of Recycling recipes
 	 *
 	 * @param output    The recipe result
 	 * @param checkSlag If the slag output should be included in the check or not

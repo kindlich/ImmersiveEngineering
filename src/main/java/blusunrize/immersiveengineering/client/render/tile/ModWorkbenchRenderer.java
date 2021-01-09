@@ -85,8 +85,8 @@ public class ModWorkbenchRenderer extends TileEntityRenderer<ModWorkbenchTileEnt
 							blueprint.draw(lineWidth, matrixStack, bufferIn);
 							matrixStack.scale(texScale, texScale, texScale);
 							matrixStack.translate(-dX, -dY/scale, 0);
+							i++;
 						}
-						i++;
 					}
 				}
 				matrixStack.pop();
