@@ -1,0 +1,2 @@
+<recipetype:immersiveengineering:crusher>.addRecipe("tnt_discharge", <item:minecraft:tnt>, 500, <item:minecraft:gunpowder> * 4, <item:minecraft:coal> % 50, <item:minecraft:diamond> % 1);
+<recipetype:immersiveengineering:crusher>.removeRecipe(<tag:items:forge:dusts>);

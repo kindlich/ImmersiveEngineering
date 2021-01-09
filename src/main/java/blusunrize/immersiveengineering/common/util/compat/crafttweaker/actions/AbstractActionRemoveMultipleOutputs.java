@@ -7,27 +7,30 @@
  */
 package blusunrize.immersiveengineering.common.util.compat.crafttweaker.actions;
 
-import com.blamejared.crafttweaker.api.item.*;
-import com.blamejared.crafttweaker.api.managers.*;
-import com.blamejared.crafttweaker.impl.item.*;
-import net.minecraft.item.*;
-import net.minecraft.item.crafting.*;
+import com.blamejared.crafttweaker.api.item.IIngredient;
+import com.blamejared.crafttweaker.api.managers.IRecipeManager;
+import com.blamejared.crafttweaker.impl.item.MCItemStackMutable;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.IRecipe;
 
-import java.util.*;
+import java.util.List;
 
-public abstract class AbstractActionRemoveMultipleOutputs<T extends IRecipe<?>> extends AbstractActionGenericRemoveRecipe<T> {
-    
-    private final IIngredient output;
-    
-    public AbstractActionRemoveMultipleOutputs(IRecipeManager manager, IIngredient output) {
-        super(manager, output);
-        this.output = output;
-    }
-    
-    @Override
-    public boolean shouldRemove(T recipe) {
-        return getAllOutputs(recipe).stream().map(MCItemStackMutable::new).anyMatch(output::matches);
-    }
-    
-    public abstract List<ItemStack> getAllOutputs(T recipe);
+public abstract class AbstractActionRemoveMultipleOutputs<T extends IRecipe<?>> extends AbstractActionGenericRemoveRecipe<T>
+{
+
+	private final IIngredient output;
+
+	public AbstractActionRemoveMultipleOutputs(IRecipeManager manager, IIngredient output)
+	{
+		super(manager, output);
+		this.output = output;
+	}
+
+	@Override
+	public boolean shouldRemove(T recipe)
+	{
+		return getAllOutputs(recipe).stream().map(MCItemStackMutable::new).anyMatch(output::matches);
+	}
+
+	public abstract List<ItemStack> getAllOutputs(T recipe);
 }

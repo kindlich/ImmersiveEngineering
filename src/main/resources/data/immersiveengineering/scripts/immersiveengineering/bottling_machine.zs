@@ -1,0 +1,2 @@
+<recipetype:immersiveengineering:bottling_machine>.removeRecipe(<item:minecraft:wet_sponge>);
+<recipetype:immersiveengineering:bottling_machine>.addRecipe("grow_a_pick", <item:minecraft:stick>, <tag:fluids:minecraft:water>, 250, <item:minecraft:wooden_pickaxe>);
