@@ -124,7 +124,7 @@ public class MixerRecipeManager implements IRecipeManager
 	{
 		final ResourceLocation resourceLocation = new ResourceLocation(Lib.MODID, recipePath);
 
-		final FluidTagInput fluidTagInput = CrTIngredientUtil.getFluidTagInput(fluidInput, 1);
+		final FluidTagInput fluidTagInput = CrTIngredientUtil.getFluidTagInput(fluidInput, amount);
 		final IngredientWithSize[] ingredientsWithSize = CrTIngredientUtil.getIngredientsWithSize(inputItems);
 		final FluidStack outputFluidStack = new FluidStack(output, amount);
 
